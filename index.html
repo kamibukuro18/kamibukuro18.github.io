@@ -5,9 +5,15 @@
     <title>Generative AI Demo</title>
 </head>
 <body>
-    <button id="generateButton">コンテンツ生成</button>
-
-	<script type="importmap">
+    <!-- ... Your HTML and CSS -->
+	<div class="container">
+        <h1>APIにデータを送信し、レスポンスを表示するウェブサイト</h1>
+        <input type="text" id="inputData" placeholder="データを入力" class="input-field">
+        <!--<button onclick="postData()" class="post-button">データを送信</button>-->
+        <button onclick="postData()">データを送信</button>
+        <pre id="response" class="response"></pre>
+    </div>
+    <script type="importmap">
       {
         "imports": {
           "@google/generative-ai": "https://esm.run/@google/generative-ai"
