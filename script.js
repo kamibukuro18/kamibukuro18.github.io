@@ -14,7 +14,9 @@
 		  const text = response.text();
 		  console.log(text);
 		  document.getElementById('response').innerText = text;
+		  document.getElementById('sendButton').disabled = false;
 	}
 	window.postData = function(){
+	document.getElementById('sendButton').disabled = true;
 	run();
 	}
