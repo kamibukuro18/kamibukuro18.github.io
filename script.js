@@ -7,7 +7,7 @@
 		  // For text-only input, use the gemini-pro model
 		  const model = genAI.getGenerativeModel({ model: "gemini-pro"});
 
-		  const prompt = document.getElementById('inputData').value;
+		  const prompt = document.getElementById('inputData').value+"という名前の人が、２０２４年に何をするかの年表を、面白おかしく書いてください。";
 
 		  const result = await model.generateContent(prompt);
 		  const response = await result.response;
