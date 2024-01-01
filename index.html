@@ -8,8 +8,8 @@
 <body oncontextmenu="return false;">
     <!-- ... Your HTML and CSS -->
 	<div class="container">
-        <h1>あなたの２０２４年年表</h1>
-        <input type="text" id="inputData" placeholder="名前を入力" class="input-field">
+        <h1>あなたの２０２４年</h1>
+        <input type="text" id="inputData" placeholder="名前を入力" class="input-field" minlength="2" maxlength="10">
         <!--<button onclick="postData()" class="post-button">データを送信</button>-->
         <button id="sendButton" onclick="postData()">年表を出す</button>
         <pre id="response" class="response"></pre>
